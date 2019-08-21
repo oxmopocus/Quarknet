@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e5bc6e6-bade-4c09-a29a-dcebae6adacc" name="Default Changelist" comment="" />
+    <list default="true" id="4e5bc6e6-bade-4c09-a29a-dcebae6adacc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/User/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/User/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/quark/reply.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuarkController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuarkController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Quark.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Quark.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_09_100015_create_quarks_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_09_100015_create_quarks_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/quark/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/quark/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/quark/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/quark/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/quark/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/quark/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/quark/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/quark/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +42,23 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -108,7 +154,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1PBQ6YJdlgA4IrKYsmnRSsQFVgN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -144,11 +192,32 @@
       <workItem from="1565595021065" duration="2273000" />
       <workItem from="1565599140948" duration="727000" />
       <workItem from="1565599915398" duration="5611000" />
-      <workItem from="1565608764180" duration="1344000" />
+      <workItem from="1565608764180" duration="8843000" />
+      <workItem from="1565618659949" duration="1754000" />
+      <workItem from="1565677666956" duration="22205000" />
+      <workItem from="1565764703634" duration="20887000" />
+      <workItem from="1565937363645" duration="20476000" />
+      <workItem from="1566196785124" duration="12223000" />
+      <workItem from="1566214822051" duration="8206000" />
+      <workItem from="1566282854890" duration="23001000" />
+      <workItem from="1566368962533" duration="10627000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

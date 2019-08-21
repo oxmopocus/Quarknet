@@ -1,12 +1,14 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></head>
-<body>
-<h1>QUARK</h1>
+@extends('layouts.app')
+@section('content')
 
-<input >mail ou nom d'utilisateur
-<input>Mot de passe
-<button>Se connecter</button>
+<body>
+<div class="container">
+    <h1 class="mt-4">KWAK</h1>
+    <img src="/img/duck.png" alt="" style="width: 100px; height: 100px;">
+
+    <div class="mt-4">TOUT LES KWAKS</div>
+</div>
 
 </body>
 </html>
+@endsection
