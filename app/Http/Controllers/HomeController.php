@@ -15,7 +15,8 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth')->except(['welcome']);
+        $this->middleware('guest')->only('welcome');
+        $this->middleware('auth')->except(['home']);
     }
 
     /**
@@ -25,7 +26,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $quarks = Quark::with('user')->latest()->get();
+        $quarks = Quark::with('user')->with('children')->where('parent_id', '=', null)->latest()->get();
         return view('home', ['quarks' => $quarks]);
     }
 

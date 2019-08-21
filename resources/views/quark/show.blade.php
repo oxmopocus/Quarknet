@@ -15,4 +15,16 @@
             </button>
         </div>
     </div>
+
+    @foreach ($quark->children as $child_quark)
+        <div class="container col-md-4">
+            <div class="card card-header border-gray mt-2">
+                <span><strong>{{ $child_quark->user->duckname }}</strong> a répondu :</span>
+                <span
+                    class="date mb-3">{{ $child_quark->created_at->diffForHumans() }}</span>
+                <div>{{ $child_quark->photo  }}</div>
+                <div class="mb-4">{{ $child_quark->message  }}</div>
+            </div>
+        </div>
+    @endforeach
 @endsection

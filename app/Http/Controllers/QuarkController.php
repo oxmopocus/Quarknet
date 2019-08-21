@@ -10,6 +10,7 @@ class QuarkController extends Controller
 {
     public function __construct()
     {
+        $this->middleware('guest')->only('welcome');
         $this->middleware('auth')->except('show');
     }
 
@@ -31,7 +32,14 @@ class QuarkController extends Controller
      */
     public function create()
     {
-        return view('quark.create');
+        $quarks = Quark::with('user')->with('children')->get();
+        return view('quark.reply', ['quarks' => $quarks]);
+    }
+
+    public function reply(Quark $quark){
+        $user = Auth::user();
+        $quarks = Quark::with('user')->where('parent_id', $quark->id)->get();
+        return view('quark.reply', ['quark' => $quark, 'quarks' => $quarks, 'user' => $user]);
     }
 
     /**
@@ -92,7 +100,6 @@ class QuarkController extends Controller
             'message' => 'required',
         ]);
 
-        // $quark->message = $request->input('message');
         $quark->update(['message' => $request->input('message')]);
         return redirect('/home');
     }
