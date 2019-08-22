@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Quark;
 use Illuminate\Http\Request;
+use Monolog\Utils;
 
 class HomeController extends Controller
 {
@@ -13,7 +15,8 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('guest')->only('welcome');
+        $this->middleware('auth')->except(['home']);
     }
 
     /**
@@ -23,6 +26,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $quarks = Quark::with('user')->with('children')->where('parent_id', '=', null)->latest()->get();
+        return view('home', ['quarks' => $quarks]);
     }
+
+    public function welcome(){
+        return view('welcome');
+    }
+
 }

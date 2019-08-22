@@ -10,14 +10,14 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::resource('Quark', 'QuarkController');
-
-Auth::routes();
-
+Route::get('/', 'HomeController@welcome')->name('welcome');
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::resource('quarks', 'QuarkController');
+Route::get('reply/{quark}', 'QuarkController@reply')->name('quarks.reply');
+
+Route::get('user/index', 'UserController@index')->name('user.index');
+Route::get('user/edit', 'UserController@edit')->name('user.edit');
+Route::put('user/update', 'UserController@update')->name('user.update');
+
+Auth::routes();

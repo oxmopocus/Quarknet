@@ -15,8 +15,13 @@ class CreateQuarksTable extends Migration
     {
         Schema::create('quarks', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->text('content');
+            $table->text('message');
+            $table->text('photo')->nullable();
+            $table->text('tags')->nullable();
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->unsignedBigInteger('parent_id')->nullable();
             $table->timestamps();
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
