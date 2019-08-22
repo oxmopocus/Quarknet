@@ -23,7 +23,7 @@
                 <form action="{{ route('quarks.destroy', $quark) }}" method="POST">
                     @csrf
                     @method('delete')
-                    @if(Auth::check() and $quark->user->id == Auth::user()->id and Gate::check('$child_quark', $quark)->id)
+                    @if(Auth::check() and $quark->user->id == Auth::user()->id)
                         <button class="btn btn-sm btn-danger col-md-2 mt-1" type="submit"
                                 style="float: right; margin-left: 600px; width: 80px;">
                             Supprimer
